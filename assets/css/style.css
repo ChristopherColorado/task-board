@@ -9,8 +9,58 @@ body {
 
 .task-card {
   margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .task-card:hover {
   cursor: grab;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.task-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.task-desc {
+  font-size: 0.9em;
+}
+
+.task-deadline {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.lane {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+}
+
+.lane-header {
+  background-color: #007bff;
+  color: white;
+}
+
+#to-do .card-header {
+  background-color: #ffc107;
+}
+
+#in-progress .card-header {
+  background-color: #17a2b8;
+}
+
+#done .card-header {
+  background-color: #28a745;
+}
+
+.task-overdue {
+  border-left: 4px solid red;
+}
+
+.task-near-deadline {
+  border-left: 4px solid yellow;
 }
