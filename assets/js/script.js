@@ -1,3 +1,6 @@
+// Extend Day.js with isSameOrAfter plugin
+dayjs.extend(dayjs_plugin_isSameOrAfter);
+
 // Retrieve tasks and nextId from localStorage
 let taskList = JSON.parse(localStorage.getItem("tasks")) || [];
 let nextId = JSON.parse(localStorage.getItem("nextId")) || 1;
